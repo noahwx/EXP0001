@@ -7,8 +7,8 @@ import Projects from './pages/Projects';
 const Main = () => {
   return (
     <Routes> {/* The Switch decides which component to show based on the current URL.*/}
-      <Route exact path="./pages/Home" element={<Home/>}/>
-      <Route exact path='/pages/About' element={<About/>}/>
+      <Route exact path='/pages/Home' element={<Home />}/>
+      <Route exact path='/pages/About' element={<About />}/>
       <Route exact path='/pages/Projects' element={<Projects />}/>
     </Routes>
   );
