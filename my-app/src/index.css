@@ -9,7 +9,6 @@
 
 .navlink.active {
   color: #FC814A;
-  font-weight: 900;
 }
 
 /* Navbar Styles */
@@ -79,6 +78,8 @@
   margin-bottom: 0;
 
   color: #2F2F2F;
+
+  animation: 1s ease 0s 1 slideInFromRight;
 }
 
 .home-stitle {
@@ -86,6 +87,30 @@
   font-weight: 300;
 
   color: #2F2F2F;
+
+  animation: 1s ease 0s 1 slideInFromRight;
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(-200%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromTop {
+  0% {
+    transform: translateY(300%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 /* About Styles */
@@ -106,6 +131,25 @@
   color: #2F2F2F;
 
   border-bottom: 2px solid #2F2F2F;
+}
+
+.about-stitle {
+  font-size: clamp(1rem, 2vw, 1rem);
+  font-weight: 300;
+
+  color: #2F2F2F;
+
+  animation: 1s ease 0s 1 slideInFromTop;
+}
+
+.info-dropdown {
+  text-decoration: none;
+  color: #2F2F2F;
+  font-weight: 900;
+}
+
+.info-dropdown:hover {
+  color: #FC814A;
 }
 
 /* Project Styles */
@@ -130,6 +174,15 @@
   border-bottom: 2px solid #2F2F2F;
 }
 
+.proj-stitle {
+  font-size: clamp(1rem, 2vw, 1rem);
+  font-weight: 300;
+
+  color: #2F2F2F;
+
+  animation: 1s ease 0s 1 slideInFromTop;
+}
+
 .project {
   position: relative;
   margin-top: 2vh;
@@ -140,32 +193,58 @@
 
   float: left;
 
-  background-color: #EFF2EF;
-  border: 2px solid #2F2F2F;
-  border-radius: 5px;
+  border-radius: 10px;
 
-  transition: transform 500ms ease, box-shadow 500ms ease;
+  overflow: hidden;
+  text-decoration: none;
+
+  filter: grayscale(100%);
+
+  transition: transform 700ms ease, box-shadow 500ms ease, opacity 500ms ease, filter 500ms ease;
 }
 
 .pb-title {
+  position: relative;
+  z-index: 1;
   padding: 0.2em;
   margin-top: 10vh;
   font-size: clamp(1.5rem, 3vw, 1.5rem);
   font-weight: 200;
 
-  color: #2F2F2F;
+  color: #EFF2EF;
+  text-shadow: 1px 1px #2F2F2F;
 }
 
 .pb-description {
+  position: relative;
+  z-index: 1;
   padding: 0.2em;
   font-size: clamp(1rem, 2vw, 1rem);
   font-weight: 300;
 
-  color: #2F2F2F;
+  color: #EFF2EF;
+  text-shadow: 1px 1px #2F2F2F;
 }
 
-.project:hover {
-  transform: scale(1.35);
-  box-shadow: 7px 7px 0px 0px #FC814A;
-  z-index: 1;
+.pbox-img {
+  display: block;
+  position: absolute;
+  top: -10vh;
+  left: 0;
+  right: 0;
+
+  width: 100%;
+
+  z-index: 0;
+}
+
+.projects:hover > .project {
+  opacity: 0.3;
+}
+
+.projects:hover > .project:hover {
+  opacity: 1;
+  transform: scale(1.15);
+  z-index: 2;
+  filter: none;
 }
