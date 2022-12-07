@@ -1,13 +1,14 @@
 import Navbar from './Navbar';
 import './index.css';
 import Main from './Main';
+import Home from './pages/Home';
 
 function App() {
   return (
-    <div className="App">
-      <Navbar />
-      <Main />
-    </div>
+      <>
+        <Navbar />
+        <Main />
+      </>
   );
 }
 
