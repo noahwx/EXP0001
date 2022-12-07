@@ -1,7 +1,8 @@
 import Navbar from './Navbar';
 import './index.css';
 import Main from './Main';
-import Home from './pages/Home';
+
+// Build: 0.0.007b
 
 function App() {
   return (
