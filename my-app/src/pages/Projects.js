@@ -8,9 +8,9 @@ const Projects = () => {
             <div className="projects">
                 <a href="/" className="project">
                     <div>
-                        <h3 className="pb-title">Unknown project</h3>
-                        <p className="pb-description">Unknown project description.</p>
-                        <img src='https://images.unsplash.com/photo-1670293045842-f35707741a0d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1015&q=80' alt="" className='pbox-img'/>
+                        <h3 className="pb-title">To The Moon Project</h3>
+                        <p className="pb-description">A react app for stock information and news called To The Moon.</p>
+                        <img src='https://i.ibb.co/XST0JPf/Screenshot-2022-12-09-at-7-00-28-PM.png' alt="" className='pbox-img'/>
                     </div>
                 </a>
                 <a href="/" className="project">
