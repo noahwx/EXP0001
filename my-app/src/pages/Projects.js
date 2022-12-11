@@ -15,9 +15,9 @@ const Projects = () => {
                 </a>
                 <a href="/" className="project">
                     <div>
-                        <h3 className="pb-title">Unknown project</h3>
-                        <p className="pb-description">Unknown project description.</p>
-                        <img src='https://images.unsplash.com/photo-1670331524356-8a54cf7d2064?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2233&q=80' alt="" className='pbox-img'/>
+                        <h3 className="pb-title">Utopia Burger Project</h3>
+                        <p className="pb-description">A react app for Utopia Burgers to showcase food offered, menu and contact form.</p>
+                        <img src='https://i.ibb.co/HPRbX1F/Screenshot-2022-12-10-at-10-01-50-PM.png' alt="" className='pbox-img'/>
                     </div>
                 </a>
                 <a href="/" className="project">
